@@ -1,1 +1,6 @@
+.gitignore
 /.DS_Store
+Fonts/Roboto_Slab/.DS_Store
+wwr/.DS_Store
+Fonts/.DS_Store
+wwr/images/.DS_Store
