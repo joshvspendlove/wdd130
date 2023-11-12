@@ -174,3 +174,9 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
+.med-img
+{
+  max-width: 500px;
+  width: auto;
+}
