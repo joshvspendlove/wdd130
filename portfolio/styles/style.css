@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap');
+
+
+body
+{
+    margin: 0 0;
+    width: 100%;
+    background-color: #edf1fc;
+    font-family: Roboto, sans-serif;
+}
+
+header
+{
+    height: 100%;
+    color: #142B43;
+    background-color: #9FC490;
+    display: grid;
+    grid-template-columns: 150px auto;
+   
+}
+#logo-area
+{
+    
+    margin: auto 3px;
+}
+
+.logo
+{
+    width: 80px;
+}
+
+nav 
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a
+{
+    text-align: center;
+    text-decoration: none;
+    color: #090c20;
+    padding: 35px;
+}
+
+nav a:hover
+{
+    background-color: #142B43;
+    color: #6F9999;
+}
+
+
+main
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#image-self
+{
+    width: 100%;
+    grid-column: 3/5;
+    grid-row: 1/3;
+    border: solid #82A3A1 .5em;
+    border-radius: 10%;
+}
+
+#image-family
+{
+    width: 100%;
+    grid-column: 2/6;
+    grid-row: 3/5;
+    border: solid #82A3A1 .5em;
+    border-radius: 10%;
+}
+
+#about-me-aside
+{
+    grid-column: 7/12;
+    grid-row: 1/5;
+    height: 100%;
+
+}
+
+#about-me-aside h1
+{
+    text-align: center;
+}
+
+#about-me-content
+{
+    width: 80%;
+    margin: auto;
+    position: sticky;
+    top: 10px;
+    background-color: #465362;
+    padding: 0 20px;
+    border-radius: 10%;
+    color: white;
+    border: solid #82A3A1 .5em;
+    overflow-y: auto;
+    max-height: 80vh;
+}
+
+h1
+{
+    font-size: 28px;
+    font-family: "Roboto Slab", sans-serif;
+}
+
+
+
+footer
+{
+    color: #142B43;;
+    background-color: #9FC490;
+    font-size:  1.25em;
+    padding: 25px 50px;
+    margin-top: 0;
+    display: flex;
+    /*justify-content: space-around;
+    align-items: center; */
+}
+
+footer a
+{
+    color: #142B43;
+    text-decoration: none;
+}
+
+footer a:hover
+{
+    color: #4F3924;
+}
+
+footer p a:hover 
+{
+    text-decoration: underline;
+}
