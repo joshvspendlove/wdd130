@@ -155,7 +155,7 @@ footer p a:hover
     width: 100%;
     display: grid;
     grid-template-columns: repeat(12,1fr);
-    grid-template-rows: 150px 150px 150px 150px 25px auto auto;
+    grid-template-rows: 150px 150px 150px auto 25px auto auto;
 
     padding-top: 50px;
     padding-bottom: 50px;
