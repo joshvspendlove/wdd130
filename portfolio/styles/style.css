@@ -123,8 +123,8 @@ footer
     padding: 25px 50px;
     margin-top: 0;
     display: flex;
-    /*justify-content: space-around;
-    align-items: center; */
+    justify-content: space-around;
+    align-items: center; 
 }
 
 footer a
