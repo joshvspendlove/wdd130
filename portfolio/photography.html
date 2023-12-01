@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio - Home</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/photography.js" defer></script>
 </head>
 <body>
     <div id="content">
@@ -23,20 +24,27 @@
                 <img src="images/manti_temple.jpeg" alt="Manti Temple">
             </div>
 
-            <div class="c-image">
+            <div class="c-image fade">
                 <img src="images/payson_temple.jpeg" alt="Payson Temple">
             </div>
 
-            <div class="c-image">
+            <div class="c-image fade">
                 <img src="images/sunset.jpeg" alt="Bear Lake sunset">
             </div>
 
-            <a class="prev">&#10094;</a>
-            <a class="next">&#10095;</a>
+            <a class="prev" onclick="plusSlides(-1)" >&#10094;</a>
+            <a class="next" onclick="plusSlides(1)" >&#10095;</a>
         </div>
+        <br>
+        <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+
         <div class="description"> <!-- This will be dynamically built based on the selected picture through JavaScript. -->
             <h2 id="img-name">Manti Temple</h2> 
-            <p id="img-desc">While exploring the temple grounds in Manti, Utah, I came across this flower bed at the bottom of the hill. After moving around a bit to find the best angle, this was the photo was taken. This is one of my all time favorite photos, with it's bright colors and beautiful flowers, it majestically balances out with the white temple in the background. [Please note, this will change via JavaScript when the primary photo is changed.]</p>
+            <p id="img-desc">While exploring the temple grounds in Manti, Utah, I came across this flower bed at the bottom of the hill. After moving around a bit to find the best angle, this was the photo was taken. This is one of my all time favorite photos, with it's bright colors and beautiful flowers, it majestically balances out with the white temple in the background.</p>
         </div>
         <div class="all-images">
             <img src="images/manti_temple_tm.jpeg" alt="Manti Temple Thumbnail">

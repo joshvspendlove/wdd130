@@ -50,7 +50,7 @@ nav a:hover
 }
 
 
-main
+.home-grid
 {
     width: 100%;
     display: grid;
@@ -141,4 +141,148 @@ footer a:hover
 footer p a:hover 
 {
     text-decoration: underline;
+}
+
+
+
+
+
+
+/* Photography */
+
+.photography-grid
+{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 150px 150px 150px 25px repeat(4,100px) auto;
+    grid-gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.carousel
+{
+    grid-column: 2/12;
+    grid-row: 1/4;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: auto;
+    display: block;
+    background-color: black;
+}
+
+.c-image
+{
+    display: none;
+    width: 100%;
+    height: 100%;
+
+}
+
+.c-image >  img
+{
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.prev, .next 
+{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: 1px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next 
+{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover 
+{
+    background-color: rgba(0,0,0,0.8);
+}
+.dots
+{
+    text-align: center;
+    grid-column: 6/8;
+    grid-row: 4/5;
+}
+
+.dot 
+{
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover 
+{
+    background-color: #717171;
+}
+
+.fade 
+{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade 
+{
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.description
+{
+    grid-column: 2/12;
+    grid-row: 5/7;
+    background-color: #465362;
+    height: 100%;
+    border-radius: 10%;
+    color: white;
+    border: solid #82A3A1 .5em;
+    text-align: center;
+    overflow-y: auto;
+}
+
+.all-images
+{
+    height: auto;
+    grid-column: 2/12;
+    grid-row: 7/10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.all-images > img
+{
+    max-width: 100%;
+    height: auto;
+    align-self: center;
+    padding: 10px 0;
 }
