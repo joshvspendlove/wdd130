@@ -35,21 +35,21 @@
             <a class="prev" onclick="plusSlides(-1)" >&#10094;</a>
             <a class="next" onclick="plusSlides(1)" >&#10095;</a>
         </div>
-        <br>
-        <div class="dots">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
+        <div class="all-images row">
+            <div class="column">
+                <img class="demo cursor" src="images/manti_temple_tm.jpeg" alt="Manti Temple Thumbnail" onclick="currentSlide(1)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/payson_temple_tm.jpeg" alt="Payson Temple Thumbnail" onclick="currentSlide(2)">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/sunset_tm.jpeg" alt="Bear Lake sunset Thumbnail" onclick="currentSlide(3)">
           </div>
+        </div>
 
         <div class="description"> <!-- This will be dynamically built based on the selected picture through JavaScript. -->
             <h2 id="img-name">Manti Temple</h2> 
             <p id="img-desc">While exploring the temple grounds in Manti, Utah, I came across this flower bed at the bottom of the hill. After moving around a bit to find the best angle, this was the photo was taken. This is one of my all time favorite photos, with it's bright colors and beautiful flowers, it majestically balances out with the white temple in the background.</p>
-        </div>
-        <div class="all-images">
-            <img src="images/manti_temple_tm.jpeg" alt="Manti Temple Thumbnail">
-            <img src="images/payson_temple_tm.jpeg" alt="Payson Temple Thumbnail">
-            <img src="images/sunset_tm.jpeg" alt="Bear Lake sunset Thumbnail">
         </div>
     </main>
     <footer>
