@@ -238,28 +238,8 @@ footer p a:hover
   opacity: 1;
 }
 
-
-
-.dots
-{
-    text-align: center;
-    grid-column: 6/8;
-    grid-row: 4/5;
-}
-
-.dot 
-{
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
   
-.active, .dot:hover 
+.active
 {
     background-color: #717171;
 }
@@ -304,7 +284,7 @@ footer p a:hover
 .all-images  img
 {
     max-width: 100%;
-    max-height: 150px;
+    max-height: 100px;
     align-self: center;
-    padding: 10px 0;
+    padding: 10px 10px;
 }
