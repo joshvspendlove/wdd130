@@ -267,6 +267,7 @@ footer p a:hover
     border: solid #82A3A1 .5em;
     text-align: center;
     overflow-y: auto;
+    padding: 0 20px;
 }
 
 .all-images
