@@ -289,3 +289,83 @@ footer p a:hover
     align-self: center;
     padding: 10px 10px;
 }
+
+
+/* Programming */
+
+.programming-grid
+{
+    margin: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 50px;
+
+    padding: 50px 0px;
+}
+.program-card
+{
+    width: 90%;
+    max-width: 1000px;
+    height: 100%;
+    margin: auto;
+    background-color: #465362;
+    text-align: center;
+    border-radius: 10%;
+    color: white;
+    border: solid #82A3A1 .5em;
+}
+
+.program-img
+{
+    padding-top: 25px;
+    height: 150px;
+}
+
+.program-name
+{
+    padding: 0 20px;
+}
+
+.program-desc
+{
+    padding: 0 20px;
+}
+
+
+@media screen and (max-width: 800px) 
+{
+    .home-grid
+    {
+        width: 90%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+
+    #image-self, #image-family
+    {
+        max-height: 200px;
+        width: auto;
+    }
+
+    #about-me-aside
+    {
+        text-align: left;
+    }
+
+    nav, footer 
+    {
+        flex-direction: column;
+    }
+    nav a 
+    {
+        display: block;
+        padding: 15px;
+    }
+    footer 
+    {
+        margin-top: 25px;
+    }
+}
